@@ -9,9 +9,9 @@ export default function HeroSection() {
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-6">
             Ready to Step Up Your Personal Development Game?
           </h1>
-          <p className="text-lg sm:text-xl lg:text-2xl text-gray-700 mb-8">
-            Discover our collection of resources to help you reach your goals
-            and unlock your full potential.
+          <p className="text-lg sm:text-xl lg:text-2xl text-gray-700 mb-8 w-3/4">
+            Transform your mindset, become a growth-oriented individual and an
+            intentional reader with our intensive program.
           </p>
           <a
             href="#learn-more"
