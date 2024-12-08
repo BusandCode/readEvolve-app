@@ -255,14 +255,9 @@ export default function Home() {
           <br />
           <a
             href="#learn-more"
-            className="bg-[#25D167] text-white font-extrabold text-xl px-8 py-4 rounded-lg shadow-lg hover:opacity-80 transition duration-300"
+            className="bg-[#25D167] text-white text-center font-extrabold text-xl px-8 py-4 rounded-lg shadow-lg hover:opacity-80 transition duration-300"
           >
-            <a
-                href="#learn-more"
-                className="bg-[#25D167] text-white px-8 py-4 rounded-lg shadow-lg hover:opacity-80 transition duration-300"
-              >
-                Get Started
-              </a>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+            Apply Now to Become an Ambassador
           </a>
         </VStack>
       </VStack>
