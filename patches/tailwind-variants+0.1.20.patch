@@ -1,0 +1,21 @@
+diff --git a/node_modules/tailwind-variants/dist/index.d.ts b/node_modules/tailwind-variants/dist/index.d.ts
+index 7c7aa0c..dcc7c63 100644
+--- a/node_modules/tailwind-variants/dist/index.d.ts
++++ b/node_modules/tailwind-variants/dist/index.d.ts
+@@ -2,6 +2,7 @@ import type {ClassNameValue as ClassValue} from "tailwind-merge";
+ 
+ import {TVConfig, TWMConfig} from "./config";
+ import {TVGeneratedScreens} from "./generated";
++import { TbVacuumCleaner } from "react-icons/tb";
+ 
+ /**
+  * ----------------------------------------
+@@ -301,6 +302,8 @@ export declare function createTV(config: TVConfig): TV;
+ 
+ export declare const defaultConfig: TVConfig;
+ 
++export type TVConfig = TVConfig;
++
+ export type VariantProps<Component extends (...args: any) => any> = Omit<
+   OmitUndefined<Parameters<Component>[0]>,
+   "class" | "className"
