@@ -1,0 +1,11 @@
+diff --git a/node_modules/@gluestack-ui/nativewind-utils/tva/index.ts b/node_modules/@gluestack-ui/nativewind-utils/tva/index.ts
+index b2a988f..e7be1a9 100644
+--- a/node_modules/@gluestack-ui/nativewind-utils/tva/index.ts
++++ b/node_modules/@gluestack-ui/nativewind-utils/tva/index.ts
+@@ -1,5 +1,5 @@
+ import type { TVA } from '../types';
+-import type { TVConfig } from 'tailwind-variants/dist/config';
++import type { TVConfig } from 'tailwind-variants';
+ import { deepMergeObjects } from '../utils/deepMerge';
+ // @ts-ignore
+ import { tv } from 'tailwind-variants';
