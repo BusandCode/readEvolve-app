@@ -13,6 +13,11 @@ import viral from "../src/assets/viral.png";
 import member from "../src/assets/membership-card.png";
 import certificate from "../src/assets/certificate.png";
 import gift from "../src/assets/gift-card.png";
+import openbook from "../src/assets/open-book.png";
+import engage from "../src/assets/engage.png";
+import apply from "../src/assets/apply.png";
+import cultivate from "../src/assets/cultivation.png";
+import badge from "../src/assets/badge.png";
 
 export default function Home() {
   return (
@@ -94,6 +99,294 @@ export default function Home() {
             >
               Learn More About Us
             </a>
+          </VStack>
+        </VStack>
+
+        <VStack className="bg-white font-suse py-20 px-6 sm:px-8 lg:px-36 my-4 flex justify-center items-center">
+          {/* Wrapper for cards */}
+          <VStack className="flex flex-col lg:flex-row gap-8 items-stretch mt-10">
+            {/* Card 1 */}
+            <VStack className="bg-white p-6 rounded-lg shadow-lg flex-1 flex flex-col">
+              <div className="p-4 flex-grow">
+                <h2 className="text-xl font-semibold text-gray-900 mb-6">
+                  OUR STORY
+                </h2>
+                <p className="text-gray-700">
+                  ReadEvolve began with a simple idea: what if reading could
+                  drive measurable growth and help individuals in their journey
+                  to actualizing their God-given potentials? We wanted to create
+                  a space where people could learn, act, and evolve and be all
+                  they can be together. Today, ReadEvolve is a thriving
+                  community of growth-seekers who believe in the power of books
+                  to transform lives.
+                </p>
+              </div>
+            </VStack>
+
+            {/* Card 2 */}
+            <VStack className="bg-white p-6 rounded-lg shadow-lg flex-1 flex flex-col">
+              <div className="p-4 flex-grow">
+                <h2 className="text-xl font-semibold text-gray-900 mb-4">
+                  OUR MISSION
+                </h2>
+                <p className="text-gray-700">
+                  <b>What defines us?</b>
+                  <br />
+                  <br />
+                  To build a dynamic community that empowers individuals to
+                  achieve their fullest potential by turning reading into
+                  intentional, actionable growth.
+                </p>
+              </div>
+            </VStack>
+
+            {/* Card 3 */}
+            <VStack className="bg-white p-6 rounded-lg shadow-lg flex-1 flex flex-col">
+              <div className="p-4 flex-grow">
+                <h2 className="text-xl font-semibold text-gray-900 mb-4">
+                  OUR REWARDS
+                </h2>
+                <p className="text-gray-700">
+                  <b>Where are we going?</b>
+                  <br />
+                  <br />
+                  Our ultimate goal is to build a large network of intentional
+                  individuals who will have a solid knowledge base and also
+                  growth-oriented mindset to drive positive change in their
+                  world.
+                </p>
+              </div>
+            </VStack>
+
+            {/* Card 4 */}
+            <VStack className="bg-white p-6 rounded-lg shadow-lg flex-1 flex flex-col">
+              <div className="p-4 flex-grow">
+                <h2 className="text-xl font-semibold text-gray-900 mb-4">
+                  OUR CORE VALUES
+                </h2>
+                <p className="text-gray-700 text-2xl">
+                  <ul>
+                    <li>Curiosity</li>
+                    <li>Accountability</li>
+                    <li>Intentionality</li>
+                    <li>Contribution</li>
+                  </ul>
+                </p>
+              </div>
+            </VStack>
+          </VStack>
+        </VStack>
+
+        <VStack className="bg-white font-suse py-20 px-6 sm:px-8 lg:px-36 my-4 flex justify-center items-center">
+          <VStack className="text-center max-w-3xl flex flex-col justify-center items-center">
+            <h1 className="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-6">
+              What We Do?
+            </h1>
+          </VStack>
+          <VStack className="text-center max-w-3xl flex flex-col justify-center items-center mb-8">
+            <p className="text-lg text-gray-700">
+              At ReadEvolve, we do more than read books—we create
+              transformation. Our flagship framework, <b>REACH</b> provide
+              step-by-step guidance for personal development. This frameworks
+              gives you access to;
+            </p>
+          </VStack>
+
+          <VStack className="flex flex-col lg:flex-row gap-8 items-stretch mt-10">
+            {/* Card 1 */}
+            <VStack className="bg-white p-6 rounded-lg shadow-lg flex-1 flex flex-col">
+              <div className="p-4 flex-grow">
+                <h2 className="text-xl font-semibold text-gray-900 mb-6">
+                  📌 CURATED BOOK LISTS
+                </h2>
+                <p className="text-gray-700">
+                  Carefully curated books that inspire growth.
+                </p>
+              </div>
+            </VStack>
+
+            {/* Card 2 */}
+            <VStack className="bg-white p-6 rounded-lg shadow-lg flex-1 flex flex-col">
+              <div className="p-4 flex-grow">
+                <h2 className="text-xl font-semibold text-gray-900 mb-4">
+                  📌 INTERACTIVE EVENTS
+                </h2>
+                <p className="text-gray-700">
+                  Webinars, discussions, and workshops and exclusive physical
+                  meetings.
+                </p>
+              </div>
+            </VStack>
+
+            {/* Card 3 */}
+            <VStack className="bg-white p-6 rounded-lg shadow-lg flex-1 flex flex-col">
+              <div className="p-4 flex-grow">
+                <h2 className="text-xl font-semibold text-gray-900 mb-4">
+                  📌 GROWTH TOOLS
+                </h2>
+                <p className="text-gray-700">
+                  Growth maps, personalized trackers, worksheets and action
+                  guides.
+                </p>
+              </div>
+            </VStack>
+
+            {/* Card 4 */}
+            <VStack className="bg-white p-6 rounded-lg shadow-lg flex-1 flex flex-col">
+              <div className="p-4 flex-grow">
+                <h2 className="text-xl font-semibold text-gray-900 mb-4">
+                  📌 SUPPORTIVE COMMUNITY
+                </h2>
+                <p className="text-gray-700">
+                  Engage with members who share your passion for learning and
+                  growth.
+                </p>
+              </div>
+            </VStack>
+          </VStack>
+        </VStack>
+
+        <VStack className="bg-white font-suse py-20 px-6 sm:px-8 lg:px-36 my-4 flex justify-center items-center">
+          <VStack className="text-center max-w-3xl flex flex-col justify-center items-center">
+            <h1 className="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-6">
+              How We Do What We Do
+              <br />
+              (Program Framework)
+            </h1>
+          </VStack>
+          <VStack className="text-center max-w-3xl flex flex-col justify-center items-center mb-8">
+            <p className="text-lg text-gray-700">
+              Our community programs are built around the <b>REACH Framework</b>
+              —a structured approach designed to help you achieve growth, take
+              action, and experience measurable transformation. This framework
+              is not just about reading; it's about creating real change in your
+              life through purposeful learning and actionable steps.
+              <br />
+              <br />
+              The <b>REACH</b> Framework is a 12-week program that guides you
+              through a journey from passive reading to active transformation.
+              With each step, you'll gain support, connect with like-minded
+              individuals, and take real, measurable steps toward lasting
+              change.
+            </p>
+          </VStack>
+
+          <VStack className="flex flex-col lg:flex-row gap-8 items-stretch mt-10">
+            {/* Card 1 */}
+            <VStack className="bg-white p-6 rounded-lg shadow-lg flex-1 flex flex-col">
+              <div className="text-[#25D167] mb-2 p-4 items-center">
+                {/* Icon */}
+                <img
+                  src={openbook}
+                  className="w-6 h-6"
+                  style={{ width: "72px", height: "72px" }}
+                  alt="Open Book Icon"
+                />
+              </div>
+              <div className="p-4">
+                <h2 className="text-xl font-semibold text-gray-900 mb-6">
+                  READ
+                </h2>
+                <p className="text-gray-700">
+                  Start with curated book recommendations focused on personal
+                  growth themes like purpose, mindset, relationships,
+                  communication, and leadership. Receive reading guides to help
+                  you focus on key insights.
+                </p>
+              </div>
+            </VStack>
+
+            {/* Card 2 */}
+            <VStack className="bg-white p-6 rounded-lg shadow-lg flex-1 flex flex-col">
+              <div className="text-[#F59E0B] mb-2 p-4">
+                {/* Icon */}
+                <img
+                  src={engage}
+                  className="w-6 h-6"
+                  style={{ width: "72px", height: "72px" }}
+                  alt="Engage Icon"
+                />
+              </div>
+              <div className="p-4">
+                <h2 className="text-xl font-semibold text-gray-900 mb-4">
+                  ENGAGE
+                </h2>
+                <p className="text-gray-700">
+                  Participate in live discussions, group Q&A sessions, and
+                  thematic coaching calls. Connect with other members to share
+                  insights and gain diverse perspectives.
+                </p>
+              </div>
+            </VStack>
+
+            {/* Card 3 */}
+            <VStack className="bg-white p-6 rounded-lg shadow-lg flex-1 flex flex-col">
+              <div className="text-[#3B82F6] mb-2 p-4 pt-8">
+                {/* Icon */}
+                <img
+                  src={apply}
+                  className="w-6 h-6"
+                  style={{ width: "72px", height: "72px" }}
+                  alt="Apply Icon"
+                />
+              </div>
+              <div className="p-4">
+                <h2 className="text-xl font-semibold text-gray-900 mb-4">
+                  APPLY
+                </h2>
+                <p className="text-gray-700">
+                  Turn what you read into actionable steps through weekly
+                  challenges. Take practical actions that align with your growth
+                  goals.
+                </p>
+              </div>
+            </VStack>
+
+            {/* Card 4 */}
+            <VStack className="bg-white p-6 rounded-lg shadow-lg flex-1 flex flex-col">
+              <div className="text-[#3B82F6] mb-2 p-4 pt-8">
+                {/* Icon */}
+                <img
+                  src={cultivate}
+                  className="w-6 h-6"
+                  style={{ width: "72px", height: "72px" }}
+                  alt="Cultivate Icon"
+                />
+              </div>
+              <div className="p-4">
+                <h2 className="text-xl font-semibold text-gray-900 mb-4">
+                  CULTIVATE
+                </h2>
+                <p className="text-gray-700">
+                  Use tools like trackers and templates to build sustainable
+                  systems for your growth. Reflect on your progress and adjust
+                  your approach with guidance from coaches.
+                </p>
+              </div>
+            </VStack>
+
+            {/* Card 5 */}
+            <VStack className="bg-white p-6 rounded-lg shadow-lg flex-1 flex flex-col">
+              <div className="text-[#3B82F6] mb-2 p-4 pt-8">
+                {/* Icon */}
+                <img
+                  src={badge}
+                  className="w-6 h-6"
+                  style={{ width: "72px", height: "72px" }}
+                  alt="Badge Icon"
+                />
+              </div>
+              <div className="p-4">
+                <h2 className="text-xl font-semibold text-gray-900 mb-4">
+                  HONOR
+                </h2>
+                <p className="text-gray-700">
+                  Celebrate your wins and acknowledge your progress during
+                  end-of-program milestones. Share your transformation story
+                  with the community and inspire others.
+                </p>
+              </div>
+            </VStack>
           </VStack>
         </VStack>
 
