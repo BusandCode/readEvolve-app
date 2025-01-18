@@ -18,6 +18,7 @@ import engage from "../src/assets/engage.png";
 import apply from "../src/assets/apply.png";
 import cultivate from "../src/assets/cultivation.png";
 import badge from "../src/assets/badge.png";
+import { IoCheckmarkCircleSharp } from "react-icons/io5";
 
 export default function Home() {
   return (
@@ -395,18 +396,18 @@ export default function Home() {
           <h1 className="text-[28px] lg:text-4xl font-extrabold text-gray-900 mb-6 text-center">Key Features Of The REACH PROGRAM</h1>
           <h2 className="lg:text-xl text-[18px]">A personalized 12-week coaching program</h2>
           <div className="w-full mt-6">
-            <ul className="mx-auto max-w-[900px] grid grid-cols-1 lg:grid-cols-2 gap-3 text-gray-700">
-              <li>📌 A tailored growth map designed to help you achieve your personal goals</li>
-              <li>📌 A curated list of top-tier books & video course</li>
-              <li>📌 Bi-weekly live coaching clarity calls and Q&A sessions with our lead coach</li>
-              <li>📌 Exclusive membership to a dynamic & growth-oriented community</li>
-              <li>📌 Entry to our exclusive monthly physical meetings</li>
-              <li>📌 Weekly challenges to help apply lessons learned</li>
-              <li>📌 Inclusion in a smaller coaching squad for better accountability</li>
-              <li>📌 Certificates of completion and progress recognition</li>
-              <li>📌 Mentorship opportunities with experienced guides</li>
-              <li>📌 Membership giveaways and spotlight opportunities</li>
-              <li>📌 Join our Alumni community for continued support and growth after program completion</li>
+            <ul className="flex flex-col justify-center items-start gap-3">
+              <li className="flex items-center gap-1"><IoCheckmarkCircleSharp size={30} className="text-[#25D167]"/> A tailored growth map designed to help you achieve your personal goals</li>
+              <li className="flex items-center gap-1"><IoCheckmarkCircleSharp size={30} className="text-[#25D167]" /> A curated list of top-tier books & video course</li>
+              <li className="flex items-center gap-1"><IoCheckmarkCircleSharp size={30} className="text-[#25D167]"/> Bi-weekly live coaching clarity calls and Q&A sessions with our lead coach</li>
+              <li className="flex items-center gap-1"><IoCheckmarkCircleSharp size={30} className="text-[#25D167]"/> Exclusive membership to a dynamic & growth-oriented community</li>
+              <li className="flex items-center gap-1"><IoCheckmarkCircleSharp size={30} className="text-[#25D167]"/> Entry to our exclusive monthly physical meetings</li>
+              <li className="flex items-center gap-1"><IoCheckmarkCircleSharp size={30} className="text-[#25D167]"/> Weekly challenges to help apply lessons learned</li>
+              <li className="flex items-center gap-1"><IoCheckmarkCircleSharp size={30} className="text-[#25D167]"/> Inclusion in a smaller coaching squad for better accountability</li>
+              <li className="flex items-center gap-1"><IoCheckmarkCircleSharp size={30} className="text-[#25D167]"/> Certificates of completion and progress recognition</li>
+              <li className="flex items-center gap-1"><IoCheckmarkCircleSharp size={30} className="text-[#25D167]"/> Mentorship opportunities with experienced guides</li>
+              <li className="flex items-center gap-1"><IoCheckmarkCircleSharp size={30} className="text-[#25D167]"/> Membership giveaways and spotlight opportunities</li>
+              <li className="flex items-center gap-1"><IoCheckmarkCircleSharp size={30} className="text-[#25D167]"/> Join our Alumni community for continued support and growth after program completion</li>
             </ul>
           </div>
         </VStack>
