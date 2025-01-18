@@ -466,23 +466,23 @@ export default function Home() {
               Are you a university student in Nigeria passionate about personal
               growth? Love inspiring others? Join the ReadEvolve Ambassador
               Program and be the face of transformation on your campus. As an
-              ambassador, you'll:
+              ambassador, you will:
             </p>
           </VStack>
 
           <VStack className="flex flex-col lg:flex-row gap-8 items-center mb-10">
             {/* Card 1 */}
-            <VStack className="bg-white p-6 rounded-lg shadow-lg items-center flex-1">
+            <VStack className="bg-white p-6 rounded-lg shadow-lg items-center flex-1 h-[300px]">
               <div className="text-[#25D167] mb-2 p-4 items-center">
                 {/* Icon */}
                 <img
                   src={viral}
-                  className="w-6 h-6"
+                  // className="w-6 h-6"
                   style={{ width: "72px", height: "72px" }}
                   alt="Viral Icon"
                 />
               </div>
-              <div className="p-4">
+              <div className="p-4 flex flex-col items-start justify-center">
                 <h2 className="text-xl font-semibold text-gray-900 mb-6">
                   SPREAD THE WORD
                 </h2>
@@ -493,17 +493,17 @@ export default function Home() {
             </VStack>
 
             {/* Card 2 */}
-            <VStack className="bg-white p-6 rounded-lg shadow-lg items-center flex-1">
+            <VStack className="bg-white p-6 rounded-lg shadow-lg items-center  flex-1 h-[300px]">
               <div className="text-[#F59E0B] mb-2 p-4">
                 {/* Icon */}
                 <img
                   src={events}
-                  className="w-6 h-6"
+                  // className="w-6 h-6"
                   style={{ width: "72px", height: "72px" }}
                   alt="Events Icon"
                 />
               </div>
-              <div className="p-4">
+              <div className="p-4 flex flex-col items-start justify-center">
                 <h2 className="text-xl font-semibold text-gray-900 mb-4">
                   EVENTS
                 </h2>
@@ -514,17 +514,17 @@ export default function Home() {
             </VStack>
 
             {/* Card 3 */}
-            <VStack className="bg-white p-6 rounded-lg shadow-lg items-center flex-1">
+            <VStack className="bg-white p-6 rounded-lg shadow-lg items-center flex-1 h-[300px]">
               <div className="text-[#3B82F6] mb-2 p-4 pt-8">
                 {/* Icon */}
                 <img
                   src={network}
-                  //   className="w-6 h-6"
-                  style={{ width: "72px", height: "72px" }}
+                    // className="w-6 h-6"
+                  style={{ width: "60px", height: "60px" }}
                   alt="Network Icon"
                 />
               </div>
-              <div className="p-4">
+              <div className="p-4 flex flex-col items-start justify-center">
                 <h2 className="text-xl font-semibold text-gray-900 mb-4">
                   NETWORK
                 </h2>
