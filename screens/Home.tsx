@@ -389,12 +389,13 @@ export default function Home() {
             </VStack>
           </VStack>
         </VStack>
-        {/* Key Features Of the Prog */}
-        <VStack className="max-w-[1000px] px-8 py-8 mr-auto ml-auto flex flex-col items-center bg-white shadow-lg">
-          <h1 className="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-6">Key Features Of The Community</h1>
-          <h2>A personalized 12-week coaching program</h2>
-          <div className="w-full grid grid-cols-2 gap-4 mt-6">
-            <ul>
+        {/* Key Features */}
+        <VStack className="px-3 w-full">
+        <VStack className="max-w-[900px] font-suse px-8 py-8 mx-auto rounded-md flex flex-col items-center bg-white shadow-lg">
+          <h1 className="text-[28px] lg:text-4xl font-extrabold text-gray-900 mb-6 text-center">Key Features Of The REACH PROGRAM</h1>
+          <h2 className="lg:text-xl text-[18px]">A personalized 12-week coaching program</h2>
+          <div className="w-full mt-6">
+            <ul className="mx-auto max-w-[900px] grid grid-cols-1 lg:grid-cols-2 gap-3 text-gray-700">
               <li>📌 A tailored growth map designed to help you achieve your personal goals</li>
               <li>📌 A curated list of top-tier books & video course</li>
               <li>📌 Bi-weekly live coaching clarity calls and Q&A sessions with our lead coach</li>
@@ -409,7 +410,7 @@ export default function Home() {
             </ul>
           </div>
         </VStack>
-
+        </VStack>
         <VStack className="bg-white font-suse py-20 px-6 sm:px-8 lg:px-36 my-4 flex justify-center items-center">
           <VStack className="text-center max-w-3xl flex flex-col justify-center items-center">
             <h1 className="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-6">
