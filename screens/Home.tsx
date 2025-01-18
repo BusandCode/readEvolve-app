@@ -391,7 +391,7 @@ export default function Home() {
           </VStack>
         </VStack>
         {/* Key Features */}
-        <VStack className="max-w-fit px-3 w-full">
+        <VStack className="">
         <VStack className=" font-suse py-10 px-3 rounded-md bg-white shadow-lg">
           <h1 className="text-[28px] lg:text-4xl font-extrabold text-gray-900 mb-6 text-center">Key Features Of The REACH PROGRAM</h1>
           <h2 className="lg:text-xl text-[18px] text-center">A personalized 12-week coaching program</h2>
