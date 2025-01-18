@@ -271,7 +271,7 @@ export default function Home() {
             </p>
           </VStack>
 
-          <VStack className="flex flex-col lg:flex-row gap-8 items-stretch mt-10">
+          <VStack className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-10">
             {/* Card 1 */}
             <VStack className="bg-white p-6 rounded-lg shadow-lg flex-1 flex flex-col">
               <div className="text-[#25D167] mb-2 p-4 items-center">
@@ -326,7 +326,7 @@ export default function Home() {
                 <img
                   src={apply}
                   className="w-6 h-6"
-                  style={{ width: "72px", height: "72px" }}
+                  style={{ width: "72px", height: "50px" }}
                   alt="Apply Icon"
                 />
               </div>
@@ -389,7 +389,28 @@ export default function Home() {
             </VStack>
           </VStack>
         </VStack>
-
+        {/* Key Features */}
+        <VStack className="px-3 w-full">
+        <VStack className="max-w-[900px] font-suse px-8 py-8 mx-auto rounded-md flex flex-col items-center bg-white shadow-lg">
+          <h1 className="text-[28px] lg:text-4xl font-extrabold text-gray-900 mb-6 text-center">Key Features Of The REACH PROGRAM</h1>
+          <h2 className="lg:text-xl text-[18px]">A personalized 12-week coaching program</h2>
+          <div className="w-full mt-6">
+            <ul className="mx-auto max-w-[900px] grid grid-cols-1 lg:grid-cols-2 gap-3 text-gray-700">
+              <li>📌 A tailored growth map designed to help you achieve your personal goals</li>
+              <li>📌 A curated list of top-tier books & video course</li>
+              <li>📌 Bi-weekly live coaching clarity calls and Q&A sessions with our lead coach</li>
+              <li>📌 Exclusive membership to a dynamic & growth-oriented community</li>
+              <li>📌 Entry to our exclusive monthly physical meetings</li>
+              <li>📌 Weekly challenges to help apply lessons learned</li>
+              <li>📌 Inclusion in a smaller coaching squad for better accountability</li>
+              <li>📌 Certificates of completion and progress recognition</li>
+              <li>📌 Mentorship opportunities with experienced guides</li>
+              <li>📌 Membership giveaways and spotlight opportunities</li>
+              <li>📌 Join our Alumni community for continued support and growth after program completion</li>
+            </ul>
+          </div>
+        </VStack>
+        </VStack>
         <VStack className="bg-white font-suse py-20 px-6 sm:px-8 lg:px-36 my-4 flex justify-center items-center">
           <VStack className="text-center max-w-3xl flex flex-col justify-center items-center">
             <h1 className="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-6">
