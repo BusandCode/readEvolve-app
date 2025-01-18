@@ -110,7 +110,7 @@ export default function Home() {
 
         <VStack className="bg-white font-suse py-20 px-6 sm:px-8 lg:px-36 my-4 flex justify-center items-center">
           {/* Wrapper for cards */}
-          <VStack className="flex flex-col lg:flex-row gap-8 items-stretch mt-10">
+          <VStack className="grid grid-cols-2  gap-8  mt-10">
             {/* Card 1 */}
             <VStack className="bg-white p-6 rounded-lg shadow-lg flex-1 flex flex-col">
               <div className="p-4 flex-grow">
@@ -202,7 +202,7 @@ export default function Home() {
             {/* Card 1 */}
             <VStack className="bg-white p-4 h-60 rounded-lg shadow-lg flex flex-col items-start justify-center">
               <div className="p-4">
-                <h2 className="flex lg:flex-row flex-col items-center gap-4 lg:gap-2  lg:text-xl font-semibold text-gray-900 mb-6">
+                <h2 className="flex flex-col items-center gap-4 lg:gap-2  lg:text-xl font-semibold text-gray-900 mb-6">
                   <img src={bookj} alt="book" width={50}/> <small className="text-[17px]">CURATED BOOK LISTS</small>
                 </h2>
                 <p className="text-gray-700">
@@ -215,7 +215,7 @@ export default function Home() {
             {/* Card 2 */}
             <VStack className="bg-white h-60 p-4 rounded-lg shadow-lg flex flex-col items-start justify-center">
               <div className="p-4">
-                <h2 className="flex lg:flex-row flex-col items-center gap-4 lg:gap-2 lg:text-xl  font-semibold text-gray-900 mb-4">
+                <h2 className="flex flex-col items-center gap-4 lg:gap-2 lg:text-xl  font-semibold text-gray-900 mb-4">
                   <img src={event} alt="event-image" width={50}/> 
                   <small className="text-[17px]">INTERACTIVE EVENTS</small>
                 </h2>
@@ -229,7 +229,7 @@ export default function Home() {
             {/* Card 3 */}
             <VStack className="bg-white h-60 p-4 rounded-lg shadow-lg flex flex-col items-start justify-center">
               <div className="p-4">
-                <h2 className="flex lg:flex-row flex-col items-center gap-4 lg:gap-2 text-[17px] lg:text-xl  font-semibold text-gray-900 mb-4">
+                <h2 className="flex flex-col items-center gap-4 lg:gap-2 text-[17px] lg:text-xl  font-semibold text-gray-900 mb-4">
                   <img src={growth} alt="growth-image" width={50} />
                   <small className="text-[17px]">GROWTH TOOLS</small>
                 </h2>
@@ -243,7 +243,7 @@ export default function Home() {
             {/* Card 4 */}
             <VStack className="bg-white h-60 p-4 rounded-lg shadow-lg flex flex-col items-start justify-center">
               <div className="p-4">
-                <h2 className="flex lg:flex-row flex-col items-center gap-4 lg:gap-2 lg:text-xl  font-semibold text-gray-900 mb-4">
+                <h2 className="flex flex-col items-center gap-4 lg:gap-5 lg:text-xl  font-semibold text-gray-900 mb-4">
                   <img src={community} alt="community" width={50}/>
                   <small className="text-[17px]">SUPPORTIVE COMMUNITY</small>
                 </h2>
