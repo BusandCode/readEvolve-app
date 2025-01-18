@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import book from "../src/assets/book.jpg";
+// import community from "../src/assets/community.png";
 import event from "../src/assets/event.png";
 import bookj from "../src/assets/book.png";
 import check from "../src/assets/check.png"
@@ -21,7 +22,7 @@ import engage from "../src/assets/engage.png";
 import apply from "../src/assets/apply.png";
 import cultivate from "../src/assets/cultivation.png";
 import badge from "../src/assets/badge.png";
-import { IoCheckmarkCircleSharp } from "react-icons/io5";
+// import { IoCheckmarkCircleSharp } from "react-icons/io5";
 
 export default function Home() {
   return (
@@ -240,8 +241,9 @@ export default function Home() {
             {/* Card 4 */}
             <VStack className="bg-white h-60 p-4 rounded-lg shadow-lg flex flex-col items-start justify-center">
               <div className="p-4">
-                <h2 className="text-[17px] lg:text-xl  font-semibold text-gray-900 mb-4">
-                  📌 SUPPORTIVE COMMUNITY
+                <h2 className="flex items-center gap-2 lg:text-xl  font-semibold text-gray-900 mb-4">
+                  {/* <img src={community} alt="community" width={50}/> */}
+                  <small className="text-[17px]">SUPPORTIVE COMMUNITY</small>
                 </h2>
                 <p className="text-gray-700">
                   Engage with members who share your passion for learning and
