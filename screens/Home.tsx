@@ -389,6 +389,26 @@ export default function Home() {
             </VStack>
           </VStack>
         </VStack>
+        {/* Key Features Of the Prog */}
+        <VStack className="max-w-[1000px] px-8 py-8 mr-auto ml-auto flex flex-col items-center bg-white shadow-lg">
+          <h1 className="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-6">Key Features Of The Community</h1>
+          <h2>A personalized 12-week coaching program</h2>
+          <div className="w-full grid grid-cols-2 gap-4 mt-6">
+            <ul>
+              <li>📌 A tailored growth map designed to help you achieve your personal goals</li>
+              <li>📌 A curated list of top-tier books & video course</li>
+              <li>📌 Bi-weekly live coaching clarity calls and Q&A sessions with our lead coach</li>
+              <li>📌 Exclusive membership to a dynamic & growth-oriented community</li>
+              <li>📌 Entry to our exclusive monthly physical meetings</li>
+              <li>📌 Weekly challenges to help apply lessons learned</li>
+              <li>📌 Inclusion in a smaller coaching squad for better accountability</li>
+              <li>📌 Certificates of completion and progress recognition</li>
+              <li>📌 Mentorship opportunities with experienced guides</li>
+              <li>📌 Membership giveaways and spotlight opportunities</li>
+              <li>📌 Join our Alumni community for continued support and growth after program completion</li>
+            </ul>
+          </div>
+        </VStack>
 
         <VStack className="bg-white font-suse py-20 px-6 sm:px-8 lg:px-36 my-4 flex justify-center items-center">
           <VStack className="text-center max-w-3xl flex flex-col justify-center items-center">
