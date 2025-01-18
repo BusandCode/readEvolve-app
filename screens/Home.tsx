@@ -4,6 +4,7 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import book from "../src/assets/book.jpg";
 import community from "../src/assets/community.png";
+import growth from "../src/assets/growth.png";
 import event from "../src/assets/event.png";
 import bookj from "../src/assets/book.png";
 import check from "../src/assets/check.png"
@@ -229,7 +230,8 @@ export default function Home() {
             <VStack className="bg-white h-60 p-4 rounded-lg shadow-lg flex flex-col items-start justify-center">
               <div className="p-4">
                 <h2 className="flex lg:flex-row flex-col items-center gap-4 lg:gap-2 text-[17px] lg:text-xl  font-semibold text-gray-900 mb-4">
-                  📌 GROWTH TOOLS
+                  <img src={growth} alt="growth-image" width={50} />
+                  <small className="text-[17px]">GROWTH TOOLS</small>
                 </h2>
                 <p className="text-gray-700">
                   Growth maps, personalized trackers, worksheets and action
