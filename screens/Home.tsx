@@ -201,7 +201,7 @@ export default function Home() {
             <VStack className="bg-white p-4 h-60 rounded-lg shadow-lg flex flex-col items-start justify-center">
               <div className="p-4">
                 <h2 className="flex items-center gap-2  lg:text-xl font-semibold text-gray-900 mb-6">
-                  <img src={bookj} alt="book" width={60}/> <small className="text-[17px]">CURATED BOOK LISTS</small>
+                  <img src={bookj} alt="book" width={50}/> <small className="text-[17px]">CURATED BOOK LISTS</small>
                 </h2>
                 <p className="text-gray-700">
                   Carefully curated books that inspire growth.
