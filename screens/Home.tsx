@@ -3,9 +3,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import book from "../src/assets/book.jpg";
-import event from "../src/assets/event.png";
-import bookj from "../src/assets/book.png";
-import check from "../src/assets/check.png"
 import book2 from "../src/assets/book2.jpg";
 import book3 from "../src/assets/book3.jpg";
 import { VStack } from "../components/ui/vstack/index.web";
@@ -21,7 +18,6 @@ import engage from "../src/assets/engage.png";
 import apply from "../src/assets/apply.png";
 import cultivate from "../src/assets/cultivation.png";
 import badge from "../src/assets/badge.png";
-import { IoCheckmarkCircleSharp } from "react-icons/io5";
 
 export default function Home() {
   return (
@@ -196,26 +192,24 @@ export default function Home() {
             </p>
           </VStack>
 
-          <VStack className="max-w-[900px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mt-10">
+          <VStack className="flex flex-col lg:flex-row gap-8 items-stretch mt-10">
             {/* Card 1 */}
-            <VStack className="bg-white p-4 h-60 rounded-lg shadow-lg flex flex-col items-start justify-center">
-              <div className="p-4">
-                <h2 className="flex items-center gap-2  lg:text-xl font-semibold text-gray-900 mb-6">
-                  <img src={bookj} alt="book" width={50}/> <small className="text-[17px]">CURATED BOOK LISTS</small>
+            <VStack className="bg-white p-6 rounded-lg shadow-lg flex-1 flex flex-col">
+              <div className="p-4 flex-grow">
+                <h2 className="text-xl font-semibold text-gray-900 mb-6">
+                  📌 CURATED BOOK LISTS
                 </h2>
                 <p className="text-gray-700">
-                  Carefully curated books that inspire growth.
                   Carefully curated books that inspire growth.
                 </p>
               </div>
             </VStack>
 
             {/* Card 2 */}
-            <VStack className="bg-white h-60 p-4 rounded-lg shadow-lg flex flex-col items-start justify-center">
-              <div className="p-4">
-                <h2 className="flex items-center gap-2 lg:text-xl  font-semibold text-gray-900 mb-4">
-                  <img src={event} alt="event-image" width={50}/> 
-                  <small className="text-[17px]">INTERACTIVE EVENTS</small>
+            <VStack className="bg-white p-6 rounded-lg shadow-lg flex-1 flex flex-col">
+              <div className="p-4 flex-grow">
+                <h2 className="text-xl font-semibold text-gray-900 mb-4">
+                  📌 INTERACTIVE EVENTS
                 </h2>
                 <p className="text-gray-700">
                   Webinars, discussions, and workshops and exclusive physical
@@ -225,9 +219,9 @@ export default function Home() {
             </VStack>
 
             {/* Card 3 */}
-            <VStack className="bg-white h-60 p-4 rounded-lg shadow-lg flex flex-col items-start justify-center">
-              <div className="p-4">
-                <h2 className="text-[17px] lg:text-xl  font-semibold text-gray-900 mb-4">
+            <VStack className="bg-white p-6 rounded-lg shadow-lg flex-1 flex flex-col">
+              <div className="p-4 flex-grow">
+                <h2 className="text-xl font-semibold text-gray-900 mb-4">
                   📌 GROWTH TOOLS
                 </h2>
                 <p className="text-gray-700">
@@ -238,9 +232,9 @@ export default function Home() {
             </VStack>
 
             {/* Card 4 */}
-            <VStack className="bg-white h-60 p-4 rounded-lg shadow-lg flex flex-col items-start justify-center">
-              <div className="p-4">
-                <h2 className="text-[17px] lg:text-xl  font-semibold text-gray-900 mb-4">
+            <VStack className="bg-white p-6 rounded-lg shadow-lg flex-1 flex flex-col">
+              <div className="p-4 flex-grow">
+                <h2 className="text-xl font-semibold text-gray-900 mb-4">
                   📌 SUPPORTIVE COMMUNITY
                 </h2>
                 <p className="text-gray-700">
@@ -396,64 +390,30 @@ export default function Home() {
           </VStack>
         </VStack>
         {/* Key Features */}
-        <VStack className="w-[95%] mx-auto">
-        <VStack className="max-w-[1200px] mx-auto font-suse py-10 px-3 rounded-md bg-white shadow-lg">
+        <VStack className="px-3 w-full">
+        <VStack className="max-w-[900px] font-suse px-8 py-8 mx-auto rounded-md flex flex-col items-center bg-white shadow-lg">
           <h1 className="text-[28px] lg:text-4xl font-extrabold text-gray-900 mb-6 text-center">Key Features Of The REACH PROGRAM</h1>
-          <h2 className="lg:text-xl text-[17.5px] text-center">A personalized 12-week coaching program</h2>
-          <div className="mt-6">
-            <ul className="text-[20px] w-[95%] mx-auto gap-4 px-3 grid grid-cols-1 lg:grid-cols-2">
-              <li className="flex items-center gap-1 ">
-                <img src={check} alt="" width={20}/>
-                <small>A tailored growth map designed to help you achieve your personal goals</small>
-              </li>
-              <li className="flex items-center gap-1 ">
-              <img src={check} alt="" width={20}/>
-                <small>A curated list of top-tier books & video course</small>
-              </li>
-              <li className="flex items-center gap-1 ">
-              <img src={check} alt="" width={20}/>
-                <small>Bi-weekly live coaching clarity calls and Q&A sessions with our lead coach</small></li>
-              <li className="flex items-center gap-1 ">
-              <img src={check} alt="" width={20}/>
-                <small>Exclusive membership to a dynamic & growth-oriented community</small>
-              </li>
-              <li className="flex items-center gap-1 ">
-              <img src={check} alt="" width={20}/>
-                <small>Entry to our exclusive monthly physical meetings</small>
-              </li>
-              <li className="flex items-center gap-1 ">
-              <img src={check} alt="" width={20}/>
-                <small>Weekly challenges to help apply lessons learned</small>
-              </li>
-              <li className="flex items-center gap-1 ">
-              <img src={check} alt="" width={20}/>
-                <small>Inclusion in a smaller coaching squad for better accountability</small>
-              </li>
-              <li className="flex items-center gap-1 ">
-              <img src={check} alt="" width={20}/>
-                <small>Certificates of completion and progress recognition</small>
-              </li>
-              <li className="flex items-center gap-1 ">
-              <img src={check} alt="" width={20}/>
-                <small>Mentorship opportunities with experienced guides</small>
-              </li>
-              <li className="flex items-center gap-1 ">
-              <img src={check} alt="" width={20}/>
-                <small>Membership giveaways and spotlight opportunities</small>
-              </li>
-              <li className="flex items-center gap-1 ">
-              <img src={check} alt="" width={20}/>
-                <small>Join our Alumni community for continued support and growth after program completion</small>
-              </li>
+          <h2 className="lg:text-xl text-[18px]">A personalized 12-week coaching program</h2>
+          <div className="w-full mt-6">
+            <ul className="mx-auto max-w-[900px] grid grid-cols-1 lg:grid-cols-2 gap-3 text-gray-700">
+              <li>📌 A tailored growth map designed to help you achieve your personal goals</li>
+              <li>📌 A curated list of top-tier books & video course</li>
+              <li>📌 Bi-weekly live coaching clarity calls and Q&A sessions with our lead coach</li>
+              <li>📌 Exclusive membership to a dynamic & growth-oriented community</li>
+              <li>📌 Entry to our exclusive monthly physical meetings</li>
+              <li>📌 Weekly challenges to help apply lessons learned</li>
+              <li>📌 Inclusion in a smaller coaching squad for better accountability</li>
+              <li>📌 Certificates of completion and progress recognition</li>
+              <li>📌 Mentorship opportunities with experienced guides</li>
+              <li>📌 Membership giveaways and spotlight opportunities</li>
+              <li>📌 Join our Alumni community for continued support and growth after program completion</li>
             </ul>
           </div>
         </VStack>
         </VStack>
-
-        
         <VStack className="bg-white font-suse py-20 px-6 sm:px-8 lg:px-36 my-4 flex justify-center items-center">
           <VStack className="text-center max-w-3xl flex flex-col justify-center items-center">
-            <h1 className="text-[28px] lg:text-4xl font-extrabold text-gray-900 mb-6">
+            <h1 className="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-6">
               Lead the Growth Movement on Your Campus
             </h1>
           </VStack>
