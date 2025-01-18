@@ -271,7 +271,7 @@ export default function Home() {
             </p>
           </VStack>
 
-          <VStack className="flex flex-col lg:flex-row gap-8 items-stretch mt-10">
+          <VStack className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-10">
             {/* Card 1 */}
             <VStack className="bg-white p-6 rounded-lg shadow-lg flex-1 flex flex-col">
               <div className="text-[#25D167] mb-2 p-4 items-center">
@@ -326,7 +326,7 @@ export default function Home() {
                 <img
                   src={apply}
                   className="w-6 h-6"
-                  style={{ width: "72px", height: "72px" }}
+                  style={{ width: "72px", height: "50px" }}
                   alt="Apply Icon"
                 />
               </div>
