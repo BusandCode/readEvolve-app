@@ -391,27 +391,60 @@ export default function Home() {
           </VStack>
         </VStack>
         {/* Key Features */}
-        <VStack className="px-3 w-full">
-        <VStack className="max-w-[900px] font-suse px-8 py-8 mx-auto rounded-md flex flex-col items-center bg-white shadow-lg">
+        <VStack className="max-w-fit px-3 w-full">
+        <VStack className=" font-suse py-10 px-3 rounded-md bg-white shadow-lg">
           <h1 className="text-[28px] lg:text-4xl font-extrabold text-gray-900 mb-6 text-center">Key Features Of The REACH PROGRAM</h1>
-          <h2 className="lg:text-xl text-[18px]">A personalized 12-week coaching program</h2>
-          <div className="w-full mt-6">
-            <ul className="flex flex-col justify-center items-start gap-3">
-              <li className="flex items-center gap-1"><IoCheckmarkCircleSharp size={30} className="text-[#25D167]"/> A tailored growth map designed to help you achieve your personal goals</li>
-              <li className="flex items-center gap-1"><IoCheckmarkCircleSharp size={30} className="text-[#25D167]" /> A curated list of top-tier books & video course</li>
-              <li className="flex items-center gap-1"><IoCheckmarkCircleSharp size={30} className="text-[#25D167]"/> Bi-weekly live coaching clarity calls and Q&A sessions with our lead coach</li>
-              <li className="flex items-center gap-1"><IoCheckmarkCircleSharp size={30} className="text-[#25D167]"/> Exclusive membership to a dynamic & growth-oriented community</li>
-              <li className="flex items-center gap-1"><IoCheckmarkCircleSharp size={30} className="text-[#25D167]"/> Entry to our exclusive monthly physical meetings</li>
-              <li className="flex items-center gap-1"><IoCheckmarkCircleSharp size={30} className="text-[#25D167]"/> Weekly challenges to help apply lessons learned</li>
-              <li className="flex items-center gap-1"><IoCheckmarkCircleSharp size={30} className="text-[#25D167]"/> Inclusion in a smaller coaching squad for better accountability</li>
-              <li className="flex items-center gap-1"><IoCheckmarkCircleSharp size={30} className="text-[#25D167]"/> Certificates of completion and progress recognition</li>
-              <li className="flex items-center gap-1"><IoCheckmarkCircleSharp size={30} className="text-[#25D167]"/> Mentorship opportunities with experienced guides</li>
-              <li className="flex items-center gap-1"><IoCheckmarkCircleSharp size={30} className="text-[#25D167]"/> Membership giveaways and spotlight opportunities</li>
-              <li className="flex items-center gap-1"><IoCheckmarkCircleSharp size={30} className="text-[#25D167]"/> Join our Alumni community for continued support and growth after program completion</li>
+          <h2 className="lg:text-xl text-[18px] text-center">A personalized 12-week coaching program</h2>
+          <div className="mt-6">
+            <ul className="text-[20px] max-w-[800px] mx-auto gap-4">
+              <li className="flex items-center ">
+                <IoCheckmarkCircleSharp className="text-[#25D167]"/>
+                <small>A tailored growth map designed to help you achieve your personal goals</small>
+              </li>
+              <li className="flex items-center ">
+                <IoCheckmarkCircleSharp className="text-[#25D167]" />
+                <small>A curated list of top-tier books & video course</small>
+              </li>
+              <li className="flex items-center ">
+                <IoCheckmarkCircleSharp className="text-[#25D167]"/><small>Bi-weekly live coaching clarity calls and Q&A sessions with our lead coach</small></li>
+              <li className="flex items-center ">
+                <IoCheckmarkCircleSharp className="text-[#25D167]"/>
+                <small>Exclusive membership to a dynamic & growth-oriented community</small>
+              </li>
+              <li className="flex items-center ">
+                <IoCheckmarkCircleSharp className="text-[#25D167]"/>
+                <small>Entry to our exclusive monthly physical meetings</small>
+              </li>
+              <li className="flex items-center ">
+                <IoCheckmarkCircleSharp className="text-[#25D167]"/>
+                <small>Weekly challenges to help apply lessons learned</small>
+              </li>
+              <li className="flex items-center ">
+                <IoCheckmarkCircleSharp className="text-[#25D167]"/>
+                <small>Inclusion in a smaller coaching squad for better accountability</small>
+              </li>
+              <li className="flex items-center ">
+                <IoCheckmarkCircleSharp className="text-[#25D167]"/>
+                <small>Certificates of completion and progress recognition</small>
+              </li>
+              <li className="flex items-center ">
+                <IoCheckmarkCircleSharp className="text-[#25D167]"/>
+                <small>Mentorship opportunities with experienced guides</small>
+              </li>
+              <li className="flex items-center ">
+                <IoCheckmarkCircleSharp className="text-[#25D167]"/>
+                <small>Membership giveaways and spotlight opportunities</small>
+              </li>
+              <li className="flex items-center ">
+                <IoCheckmarkCircleSharp className="text-[#25D167]"/>
+                <small>Join our Alumni community for continued support and growth after program completion</small>
+              </li>
             </ul>
           </div>
         </VStack>
         </VStack>
+
+        
         <VStack className="bg-white font-suse py-20 px-6 sm:px-8 lg:px-36 my-4 flex justify-center items-center">
           <VStack className="text-center max-w-3xl flex flex-col justify-center items-center">
             <h1 className="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-6">
