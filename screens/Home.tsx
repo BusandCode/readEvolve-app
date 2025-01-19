@@ -136,7 +136,7 @@ export default function Home() {
                   OUR MISSION
                 </h2>
                 <p className="text-gray-700">
-                  <b>What defines us?</b>
+                  <small className="text-[16px]">What defines us?</small>
                   <br />
                   <br />
                   To build a dynamic community that empowers individuals to
@@ -153,7 +153,7 @@ export default function Home() {
                   OUR REWARDS
                 </h2>
                 <p className="text-gray-700">
-                  <b>Where are we going?</b>
+                  <small className="text-[16px]">Where are we going?</small>
                   <br />
                   <br />
                   Our ultimate goal is to build a large network of intentional
@@ -202,7 +202,7 @@ export default function Home() {
             {/* Card 1 */}
             <VStack className="bg-white p-4 h-60 rounded-lg shadow-lg flex flex-col items-start justify-center">
               <div className="p-4">
-                <h2 className="flex flex-col items-center gap-4 lg:gap-2  lg:text-xl font-semibold text-gray-900 mb-6">
+                <h2 className="flex flex-col items-center lg:items-start gap-4 lg:gap-2  lg:text-xl font-semibold text-gray-900 mb-6">
                   <img src={bookj} alt="book" width={50}/> <small className="text-[17px]">CURATED BOOK LISTS</small>
                 </h2>
                 <p className="text-gray-700">
@@ -215,7 +215,7 @@ export default function Home() {
             {/* Card 2 */}
             <VStack className="bg-white h-60 p-4 rounded-lg shadow-lg flex flex-col items-start justify-center">
               <div className="p-4">
-                <h2 className="flex flex-col items-center gap-4 lg:gap-2 lg:text-xl  font-semibold text-gray-900 mb-4">
+                <h2 className="flex flex-col items-center lg:items-start gap-4 lg:gap-2 lg:text-xl  font-semibold text-gray-900 mb-4">
                   <img src={event} alt="event-image" width={50}/> 
                   <small className="text-[17px]">INTERACTIVE EVENTS</small>
                 </h2>
@@ -229,7 +229,7 @@ export default function Home() {
             {/* Card 3 */}
             <VStack className="bg-white h-60 p-4 rounded-lg shadow-lg flex flex-col items-start justify-center">
               <div className="p-4">
-                <h2 className="flex flex-col items-center gap-4 lg:gap-2 text-[17px] lg:text-xl  font-semibold text-gray-900 mb-4">
+                <h2 className="flex flex-col items-center lg:items-start gap-4 lg:gap-2 text-[17px] lg:text-xl  font-semibold text-gray-900 mb-4">
                   <img src={growth} alt="growth-image" width={50} />
                   <small className="text-[17px]">GROWTH TOOLS</small>
                 </h2>
@@ -243,7 +243,7 @@ export default function Home() {
             {/* Card 4 */}
             <VStack className="bg-white h-60 p-4 rounded-lg shadow-lg flex flex-col items-start justify-center">
               <div className="p-4">
-                <h2 className="flex flex-col items-center gap-4 lg:gap-5 lg:text-xl  font-semibold text-gray-900 mb-4">
+                <h2 className="flex flex-col  items-center lg:items-start gap-4 lg:gap-5 lg:text-xl  font-semibold text-gray-900 mb-4">
                   <img src={community} alt="community" width={50}/>
                   <small className="text-[17px]">SUPPORTIVE COMMUNITY</small>
                 </h2>
@@ -549,7 +549,7 @@ export default function Home() {
 
           <VStack className="flex flex-col lg:flex-row gap-8 items-center mt-10">
             {/* Card 1 */}
-            <VStack className="bg-white p-6 rounded-lg shadow-lg items-center flex-1">
+            <VStack className="bg-white h-[250px] p-6 rounded-lg shadow-lg items-center flex-1">
               <div className="text-[#25D167] mb-2 p-4">
                 {/* Icon */}
                 <img
@@ -559,7 +559,7 @@ export default function Home() {
                   alt="Member Icon"
                 />
               </div>
-              <div className="p-4">
+              <div className="p-2">
                 <h2 className="text-xl font-semibold text-gray-900 mb-6">
                   MEMBERSHIP
                 </h2>
@@ -568,7 +568,7 @@ export default function Home() {
             </VStack>
 
             {/* Card 2 */}
-            <VStack className="bg-white p-6 rounded-lg shadow-lg items-center flex-1">
+            <VStack className="bg-white h-[250px] p-6 rounded-lg shadow-lg items-center flex-1">
               <div className="text-[#F59E0B] mb-2 p-4">
                 {/* Icon */}
                 <img
@@ -578,7 +578,7 @@ export default function Home() {
                   alt="Certificate Icon"
                 />
               </div>
-              <div className="p-4">
+              <div className="p-2">
                 <h2 className="text-xl font-semibold text-gray-900 mb-4">
                   CERTIFICATION
                 </h2>
@@ -589,17 +589,17 @@ export default function Home() {
             </VStack>
 
             {/* Card 3 */}
-            <VStack className="bg-white p-6 rounded-lg shadow-lg items-center flex-1">
+            <VStack className="bg-white h-[250px] p-6 rounded-lg shadow-lg items-center flex-1">
               <div className="text-[#3B82F6] mb-2 p-4 pt-8">
                 {/* Icon */}
                 <img
                   src={gift}
                   //   className="w-6 h-6"
-                  style={{ width: "72px", height: "72px" }}
-                  alt="Gift Icon"
+                  style={{ width: "58px", height: "58px" }}
+                  alt="Gift Icon" width={50}
                 />
               </div>
-              <div className="p-4">
+              <div className="p-2">
                 <h2 className="text-xl font-semibold text-gray-900 mb-4">
                   REWARDS
                 </h2>
