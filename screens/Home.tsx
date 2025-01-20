@@ -7,6 +7,10 @@ import community from "../src/assets/community.png";
 import growth from "../src/assets/growth.png";
 import event from "../src/assets/event.png";
 import bookj from "../src/assets/book.png";
+import testimonial_1 from "../src/assets/testimonial-1.jpg"
+import testimonial_2 from "../src/assets/testimonial-2.jpg"
+import testimonial_3 from "../src/assets/testimonial-3.jpg"
+import testimonial_4 from "../src/assets/testimonial-4.jpg"
 import check from "../src/assets/check.png"
 import book2 from "../src/assets/book2.jpg";
 import book3 from "../src/assets/book3.jpg";
@@ -23,7 +27,6 @@ import engage from "../src/assets/engage.png";
 import apply from "../src/assets/apply.png";
 import cultivate from "../src/assets/cultivation.png";
 import badge from "../src/assets/badge.png";
-// import { IoCheckmarkCircleSharp } from "react-icons/io5";
 
 export default function Home() {
   return (
@@ -31,7 +34,7 @@ export default function Home() {
       <VStack>
         <Header />
 
-        <section className="bg-white font-suse py-20">
+        <section className="bg-white font-suse py-20 relative top-8">
           <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 flex flex-col lg:flex-row items-center gap-12">
             {/* Text Content */}
             <div className="flex-1">
@@ -80,7 +83,7 @@ export default function Home() {
           </div>
         </section>
 
-        <VStack className="bg-[#25D167] font-suse py-20 px-6 sm:px-8 lg:px-36 my-4 flex flex-col lg:flex-row justify-between items-center gap-8">
+        <VStack id="about" className="bg-[#25D167] font-suse py-20 px-6 sm:px-8 lg:px-36 my-4 flex flex-col lg:flex-row justify-between items-center gap-8">
           {/* Image Section */}
           <VStack className="flex-1">
             <img src={about} alt="about" className="w-full rounded-lg" />
@@ -110,9 +113,9 @@ export default function Home() {
 
         <VStack className="bg-white font-suse py-20 px-6 sm:px-8 lg:px-36 my-4 flex justify-center items-center">
           {/* Wrapper for cards */}
-          <VStack className="grid grid-cols-2  gap-8  mt-10">
+          <VStack className="grid grid-cols-1 lg:grid-cols-2  gap-8  mt-10">
             {/* Card 1 */}
-            <VStack className="bg-white p-6 rounded-lg shadow-lg flex-1 flex flex-col">
+            <VStack className="bg-white p-6 h-[380px] lg:h-[300px] rounded-lg shadow-lg flex-1 flex flex-col">
               <div className="p-4 flex-grow">
                 <h2 className="text-xl font-semibold text-gray-900 mb-6">
                   OUR STORY
@@ -130,7 +133,7 @@ export default function Home() {
             </VStack>
 
             {/* Card 2 */}
-            <VStack className="bg-white p-6 rounded-lg shadow-lg flex-1 flex flex-col">
+            <VStack className="bg-white p-6 h-[370px] lg:h-[300px] rounded-lg shadow-lg flex-1 flex flex-col">
               <div className="p-4 flex-grow">
                 <h2 className="text-xl font-semibold text-gray-900 mb-4">
                   OUR MISSION
@@ -147,7 +150,7 @@ export default function Home() {
             </VStack>
 
             {/* Card 3 */}
-            <VStack className="bg-white p-6 rounded-lg shadow-lg flex-1 flex flex-col">
+            <VStack className="bg-white p-6 h-[380px] lg:h-[300px] rounded-lg shadow-lg flex-1 flex flex-col">
               <div className="p-4 flex-grow">
                 <h2 className="text-xl font-semibold text-gray-900 mb-4">
                   OUR REWARDS
@@ -165,7 +168,7 @@ export default function Home() {
             </VStack>
 
             {/* Card 4 */}
-            <VStack className="bg-white p-6 rounded-lg shadow-lg flex-1 flex flex-col">
+            <VStack className="bg-white p-6 h-[380px] lg:h-[300px] rounded-lg shadow-lg flex-1 flex flex-col">
               <div className="p-4 flex-grow">
                 <h2 className="text-xl font-semibold text-gray-900 mb-4">
                   OUR CORE VALUES
@@ -183,7 +186,7 @@ export default function Home() {
           </VStack>
         </VStack>
 
-        <VStack className="bg-white font-suse py-20 px-6 sm:px-8 lg:px-36 my-4 flex justify-center items-center">
+        <VStack id="services" className="bg-white font-suse py-20 px-6 sm:px-8 lg:px-36 my-4 flex justify-center items-center">
           <VStack className="text-center max-w-3xl flex flex-col justify-center items-center">
             <h1 className="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-6">
               What We Do?
@@ -205,9 +208,8 @@ export default function Home() {
                 <h2 className="flex flex-col items-center lg:items-start gap-4 lg:gap-2  lg:text-xl font-semibold text-gray-900 mb-6">
                   <img src={bookj} alt="book" width={50}/> <small className="text-[17px]">CURATED BOOK LISTS</small>
                 </h2>
-                <p className="text-gray-700">
-                  Carefully curated books that inspire growth.
-                  Carefully curated books that inspire growth.
+                <p className="text-gray-700 text-center lg:text-start">
+                  Carefully curated books that inspire growth and knowledge.
                 </p>
               </div>
             </VStack>
@@ -219,7 +221,7 @@ export default function Home() {
                   <img src={event} alt="event-image" width={50}/> 
                   <small className="text-[17px]">INTERACTIVE EVENTS</small>
                 </h2>
-                <p className="text-gray-700">
+                <p className="text-gray-700 text-center lg:text-start">
                   Webinars, discussions, and workshops and exclusive physical
                   meetings.
                 </p>
@@ -233,7 +235,7 @@ export default function Home() {
                   <img src={growth} alt="growth-image" width={50} />
                   <small className="text-[17px]">GROWTH TOOLS</small>
                 </h2>
-                <p className="text-gray-700">
+                <p className="text-gray-700 text-center lg:text-start">
                   Growth maps, personalized trackers, worksheets and action
                   guides.
                 </p>
@@ -247,7 +249,7 @@ export default function Home() {
                   <img src={community} alt="community" width={50}/>
                   <small className="text-[17px]">SUPPORTIVE COMMUNITY</small>
                 </h2>
-                <p className="text-gray-700">
+                <p className="text-gray-700 text-center lg:text-start">
                   Engage with members who share your passion for learning and
                   growth.
                 </p>
@@ -256,7 +258,7 @@ export default function Home() {
           </VStack>
         </VStack>
 
-        <VStack className="bg-white font-suse py-20 px-6 sm:px-8 lg:px-36 my-4 flex justify-center items-center">
+        <VStack  className="bg-white font-suse py-20 px-6 sm:px-8 lg:px-36 my-4 flex justify-center items-center">
           <VStack className="text-center max-w-3xl flex flex-col justify-center items-center">
             <h1 className="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-6">
               How We Do What We Do
@@ -376,6 +378,27 @@ export default function Home() {
             </VStack>
 
             {/* Card 5 */}
+            <VStack className="bg-white p-6 rounded-lg shadow-lg flex-1 flex flex-col">
+              <div className="text-[#3B82F6] mb-2 p-4 pt-8">
+                {/* Icon */}
+                <img
+                  src={badge}
+                  className="w-6 h-6"
+                  style={{ width: "72px", height: "72px" }}
+                  alt="Badge Icon"
+                />
+              </div>
+              <div className="p-4">
+                <h2 className="text-xl font-semibold text-gray-900 mb-4">
+                  HONOR
+                </h2>
+                <p className="text-gray-700">
+                  Celebrate your wins and acknowledge your progress during
+                  end-of-program milestones. Share your transformation story
+                  with the community and inspire others.
+                </p>
+              </div>
+            </VStack>
             <VStack className="bg-white p-6 rounded-lg shadow-lg flex-1 flex flex-col">
               <div className="text-[#3B82F6] mb-2 p-4 pt-8">
                 {/* Icon */}
@@ -618,6 +641,77 @@ export default function Home() {
             Apply Now to Become an Ambassador
           </a>
         </VStack>
+
+        {/* Testimonial Section */}
+        <VStack className="flex  flex-col items-center gap-10 p-2 font-suse">
+        <VStack className="text-center max-w-3xl flex flex-col justify-center items-center">
+            <h1 className="text-[28px] lg:text-4xl font-extrabold text-gray-900 mb-6">
+              What People Are Saying About Us
+            </h1>
+          </VStack>
+            <Swiper className="w-full lg:w-1/2 h-[38rem] md:h-[35rem] lg:h-[30rem]"
+                  modules={[Autoplay]}
+                  spaceBetween={30}
+                  slidesPerView={1}
+                  autoplay={true}
+                  loop={true}
+                >
+                <SwiperSlide className="bg-[#25D167] text-white px-6 py-5 rounded-lg">
+                  <div className="flex justify-center m-5 items-center">
+                  <img src={testimonial_1} alt="testimonial 1" className="rounded-full w-[150px] h-[150px]" width={200}/>
+                  </div>
+                  <div className="flex flex-col gap-3 text-center text-[23px] md:text-[25px] lg:text-[25px]">
+                  <small>I've always loved to read but it is hard to pick
+                    up books but being in a ReadEvolve community has given me the momentum
+                    to intentionally pick a book and read and that's because I see other community members talk about 
+                    what they've read and learnt in books which always inspire me.</small>
+                  <small>It's a privilege for me to be in ReadEvolve and I'm grateful for it.</small>      
+                  <i>King</i>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide className="bg-[#25D167] text-white px-6 py-5 rounded-lg">
+                  <div className="flex justify-center m-5 items-center">
+                  <img src={testimonial_2} alt="testimonial 2"  className="rounded-full  w-[150px] h-[150px]" width={200}/>
+                  </div>
+                  <div className="flex flex-col gap-3 text-center text-[23px] md:text-[25px] lg:text-[25px]">
+                    <small>ReadEvolve is a game-changer for book lovers.</small> 
+                    <small>The sense of community here is unmatched,it's like having a community
+                      that's always active and filled with people who truly understand the purpose of reading.
+                    </small> 
+                    <small>If you love books,this is the place to be!</small>  
+                  <i>Kehinde Awodele</i>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide className="bg-[#25D167] text-white px-6 py-5 rounded-lg">
+                  <div className="flex justify-center m-5 items-center">
+                  <img src={testimonial_3} alt="testimonial 3"  className="rounded-full  w-[150px] h-[150px]" width={200} />
+                  </div>
+                  <div className="flex flex-col gap-3 text-center text-[23px] md:text-[25px] lg:text-[25px]">
+                  <small>I decided to start reading nonfiction books December 2023 and boom, ReadEvolve launched.
+                  I have to say all the books we've read have helped me understand myself better and become a better human too.
+                  I really learnt a lot from the books curated and having a community where I could share my thoughts was really
+                  helpful in keeping me accountable.</small>
+                  <small>To ReadEvolve, I say thank you. </small>
+                  <i>Fisayo Akinleye</i>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide className="bg-[#25D167] text-white px-6 py-5 rounded-lg">
+                  <div className="flex justify-center m-5 items-center">
+                  <img src={testimonial_4} alt="testimonial 3" className="rounded-full  w-[150px] h-[150px]" width={200}/>
+                  </div>
+                  <div className="flex flex-col gap-3 text-center text-[23px] md:text-[25px] lg:text-[25px]">
+                  <small>ReadEvolve has been very helpful, it's a great community with an amazing coach.
+                  The carefully selected books have always been helpful, and the insights I've gotten from the books
+                  I've read in the community have helped me greatly in becoming a better human.
+                  </small>
+                  <small>It's a community I highly recommend for anyone who wants to improve all areas of their lives.
+                  </small>
+
+                  <i>Love Bearer, Barnabas David.</i>
+                  </div>
+                </SwiperSlide>
+            </Swiper>
+            </VStack>
       </VStack>
     </>
   );
