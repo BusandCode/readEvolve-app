@@ -10,7 +10,7 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-white shadow-lg shadow-black-500/20 font-suse mb-10">
+    <header className="bg-white shadow-lg shadow-black-500/20 z-[999] font-suse fixed w-full">
       <div className="flex items-center justify-between mx-auto max-w-7xl py-6 px-8 sm:px-10">
         {/* Logo */}
         <div className="flex-shrink-0">
@@ -107,7 +107,7 @@ export default function Header() {
               <li>
                 <a
                   href="#about"
-                  className="text-gray-700 text-lg hover:text-gray-900"
+                  className="text-gray-700 text-lg hover:text-gray-900" onClick={toggleMenu}
                 >
                   About us
                 </a>
@@ -116,6 +116,7 @@ export default function Header() {
                 <a
                   href="#products"
                   className="text-gray-700 text-lg hover:text-gray-900"
+                  onClick={toggleMenu}
                 >
                   Products
                 </a>
@@ -124,6 +125,7 @@ export default function Header() {
                 <a
                   href="#services"
                   className="text-gray-700 text-lg hover:text-gray-900"
+                  onClick={toggleMenu}
                 >
                   Services
                 </a>
@@ -132,6 +134,7 @@ export default function Header() {
                 <a
                   href="#blog"
                   className="text-gray-700 text-lg hover:text-gray-900"
+                  onClick={toggleMenu}
                 >
                   Blog
                 </a>
@@ -140,6 +143,7 @@ export default function Header() {
                 <a
                   href="#contact"
                   className="text-gray-700 text-lg hover:text-gray-900"
+                  onClick={toggleMenu}
                 >
                   Contact us
                 </a>
@@ -148,6 +152,7 @@ export default function Header() {
                 <a
                   href="#faq"
                   className="text-gray-700 text-lg hover:text-gray-900"
+                  onClick={toggleMenu}
                 >
                   FAQ
                 </a>
@@ -156,6 +161,7 @@ export default function Header() {
                 <a
                   href="#help"
                   className="text-gray-700 text-lg hover:text-gray-900"
+                  onClick={toggleMenu}
                 >
                   Help
                 </a>

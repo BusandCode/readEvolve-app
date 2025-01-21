@@ -3,6 +3,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import book from "../src/assets/book.jpg";
+import community from "../src/assets/community.png";
+import growth from "../src/assets/growth.png";
+import event from "../src/assets/event.png";
+import bookj from "../src/assets/book.png";
+import testimonial_1 from "../src/assets/testimonial-1.jpg"
+import testimonial_2 from "../src/assets/testimonial-2.jpg"
+import testimonial_3 from "../src/assets/testimonial-3.jpg"
+import testimonial_4 from "../src/assets/testimonial-4.jpg"
+import check from "../src/assets/check.png"
 import book2 from "../src/assets/book2.jpg";
 import book3 from "../src/assets/book3.jpg";
 import { VStack } from "../components/ui/vstack/index.web";
@@ -25,7 +34,7 @@ export default function Home() {
       <VStack>
         <Header />
 
-        <section className="bg-white font-suse py-20">
+        <section className="bg-white font-suse py-20 relative top-8">
           <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 flex flex-col lg:flex-row items-center gap-12">
             {/* Text Content */}
             <div className="flex-1">
@@ -74,7 +83,7 @@ export default function Home() {
           </div>
         </section>
 
-        <VStack className="bg-[#25D167] font-suse py-20 px-6 sm:px-8 lg:px-36 my-4 flex flex-col lg:flex-row justify-between items-center gap-8">
+        <VStack id="about" className="bg-[#25D167] font-suse py-20 px-6 sm:px-8 lg:px-36 my-4 flex flex-col lg:flex-row justify-between items-center gap-8">
           {/* Image Section */}
           <VStack className="flex-1">
             <img src={about} alt="about" className="w-full rounded-lg" />
@@ -104,9 +113,9 @@ export default function Home() {
 
         <VStack className="bg-white font-suse py-20 px-6 sm:px-8 lg:px-36 my-4 flex justify-center items-center">
           {/* Wrapper for cards */}
-          <VStack className="flex flex-col lg:flex-row gap-8 items-stretch mt-10">
+          <VStack className="grid grid-cols-1 lg:grid-cols-2  gap-8  mt-10">
             {/* Card 1 */}
-            <VStack className="bg-white p-6 rounded-lg shadow-lg flex-1 flex flex-col">
+            <VStack className="bg-white p-6 h-[380px] lg:h-[300px] rounded-lg shadow-lg flex-1 flex flex-col">
               <div className="p-4 flex-grow">
                 <h2 className="text-xl font-semibold text-gray-900 mb-6">
                   OUR STORY
@@ -124,13 +133,13 @@ export default function Home() {
             </VStack>
 
             {/* Card 2 */}
-            <VStack className="bg-white p-6 rounded-lg shadow-lg flex-1 flex flex-col">
+            <VStack className="bg-white p-6 h-[370px] lg:h-[300px] rounded-lg shadow-lg flex-1 flex flex-col">
               <div className="p-4 flex-grow">
                 <h2 className="text-xl font-semibold text-gray-900 mb-4">
                   OUR MISSION
                 </h2>
                 <p className="text-gray-700">
-                  <b>What defines us?</b>
+                  <small className="text-[16px]">What defines us?</small>
                   <br />
                   <br />
                   To build a dynamic community that empowers individuals to
@@ -141,13 +150,13 @@ export default function Home() {
             </VStack>
 
             {/* Card 3 */}
-            <VStack className="bg-white p-6 rounded-lg shadow-lg flex-1 flex flex-col">
+            <VStack className="bg-white p-6 h-[380px] lg:h-[300px] rounded-lg shadow-lg flex-1 flex flex-col">
               <div className="p-4 flex-grow">
                 <h2 className="text-xl font-semibold text-gray-900 mb-4">
                   OUR REWARDS
                 </h2>
                 <p className="text-gray-700">
-                  <b>Where are we going?</b>
+                  <small className="text-[16px]">Where are we going?</small>
                   <br />
                   <br />
                   Our ultimate goal is to build a large network of intentional
@@ -159,7 +168,7 @@ export default function Home() {
             </VStack>
 
             {/* Card 4 */}
-            <VStack className="bg-white p-6 rounded-lg shadow-lg flex-1 flex flex-col">
+            <VStack className="bg-white p-6 h-[380px] lg:h-[300px] rounded-lg shadow-lg flex-1 flex flex-col">
               <div className="p-4 flex-grow">
                 <h2 className="text-xl font-semibold text-gray-900 mb-4">
                   OUR CORE VALUES
@@ -177,7 +186,7 @@ export default function Home() {
           </VStack>
         </VStack>
 
-        <VStack className="bg-white font-suse py-20 px-6 sm:px-8 lg:px-36 my-4 flex justify-center items-center">
+        <VStack id="services" className="bg-white font-suse py-20 px-6 sm:px-8 lg:px-36 my-4 flex justify-center items-center">
           <VStack className="text-center max-w-3xl flex flex-col justify-center items-center">
             <h1 className="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-6">
               What We Do?
@@ -194,6 +203,11 @@ export default function Home() {
 
           <VStack className="flex flex-col lg:flex-row gap-8 items-stretch mt-10">
             {/* Card 1 */}
+            <VStack className="bg-white p-4 h-60 rounded-lg shadow-lg flex flex-col items-start justify-center">
+              <div className="p-4">
+                <h2 className="flex flex-col items-center lg:items-start gap-4 lg:gap-2  lg:text-xl font-semibold text-gray-900 mb-6">
+                  <img src={bookj} alt="book" width={50}/> <small className="text-[17px]">CURATED BOOK LISTS</small>
+                </h2>
             <VStack className="bg-white p-6 rounded-lg shadow-lg flex-1 flex flex-col">
               <div className="p-4 flex-grow">
                 <h2 className="text-xl font-semibold text-gray-900 mb-6">
@@ -206,12 +220,17 @@ export default function Home() {
             </VStack>
 
             {/* Card 2 */}
+            <VStack className="bg-white h-60 p-4 rounded-lg shadow-lg flex flex-col items-start justify-center">
+              <div className="p-4">
+                <h2 className="flex flex-col items-center lg:items-start gap-4 lg:gap-2 lg:text-xl  font-semibold text-gray-900 mb-4">
+                  <img src={event} alt="event-image" width={50}/> 
+                  <small className="text-[17px]">INTERACTIVE EVENTS</small>
             <VStack className="bg-white p-6 rounded-lg shadow-lg flex-1 flex flex-col">
               <div className="p-4 flex-grow">
                 <h2 className="text-xl font-semibold text-gray-900 mb-4">
                   📌 INTERACTIVE EVENTS
                 </h2>
-                <p className="text-gray-700">
+                <p className="text-gray-700 text-center lg:text-start">
                   Webinars, discussions, and workshops and exclusive physical
                   meetings.
                 </p>
@@ -219,12 +238,17 @@ export default function Home() {
             </VStack>
 
             {/* Card 3 */}
+            <VStack className="bg-white h-60 p-4 rounded-lg shadow-lg flex flex-col items-start justify-center">
+              <div className="p-4">
+                <h2 className="flex flex-col items-center lg:items-start gap-4 lg:gap-2 text-[17px] lg:text-xl  font-semibold text-gray-900 mb-4">
+                  <img src={growth} alt="growth-image" width={50} />
+                  <small className="text-[17px]">GROWTH TOOLS</small>
             <VStack className="bg-white p-6 rounded-lg shadow-lg flex-1 flex flex-col">
               <div className="p-4 flex-grow">
                 <h2 className="text-xl font-semibold text-gray-900 mb-4">
                   📌 GROWTH TOOLS
                 </h2>
-                <p className="text-gray-700">
+                <p className="text-gray-700 text-center lg:text-start">
                   Growth maps, personalized trackers, worksheets and action
                   guides.
                 </p>
@@ -232,12 +256,17 @@ export default function Home() {
             </VStack>
 
             {/* Card 4 */}
+            <VStack className="bg-white h-60 p-4 rounded-lg shadow-lg flex flex-col items-start justify-center">
+              <div className="p-4">
+                <h2 className="flex flex-col  items-center lg:items-start gap-4 lg:gap-5 lg:text-xl  font-semibold text-gray-900 mb-4">
+                  <img src={community} alt="community" width={50}/>
+                  <small className="text-[17px]">SUPPORTIVE COMMUNITY</small>
             <VStack className="bg-white p-6 rounded-lg shadow-lg flex-1 flex flex-col">
               <div className="p-4 flex-grow">
                 <h2 className="text-xl font-semibold text-gray-900 mb-4">
                   📌 SUPPORTIVE COMMUNITY
                 </h2>
-                <p className="text-gray-700">
+                <p className="text-gray-700 text-center lg:text-start">
                   Engage with members who share your passion for learning and
                   growth.
                 </p>
@@ -246,7 +275,7 @@ export default function Home() {
           </VStack>
         </VStack>
 
-        <VStack className="bg-white font-suse py-20 px-6 sm:px-8 lg:px-36 my-4 flex justify-center items-center">
+        <VStack  className="bg-white font-suse py-20 px-6 sm:px-8 lg:px-36 my-4 flex justify-center items-center">
           <VStack className="text-center max-w-3xl flex flex-col justify-center items-center">
             <h1 className="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-6">
               How We Do What We Do
@@ -387,6 +416,27 @@ export default function Home() {
                 </p>
               </div>
             </VStack>
+            <VStack className="bg-white p-6 rounded-lg shadow-lg flex-1 flex flex-col">
+              <div className="text-[#3B82F6] mb-2 p-4 pt-8">
+                {/* Icon */}
+                <img
+                  src={badge}
+                  className="w-6 h-6"
+                  style={{ width: "72px", height: "72px" }}
+                  alt="Badge Icon"
+                />
+              </div>
+              <div className="p-4">
+                <h2 className="text-xl font-semibold text-gray-900 mb-4">
+                  HONOR
+                </h2>
+                <p className="text-gray-700">
+                  Celebrate your wins and acknowledge your progress during
+                  end-of-program milestones. Share your transformation story
+                  with the community and inspire others.
+                </p>
+              </div>
+            </VStack>
           </VStack>
         </VStack>
         {/* Key Features */}
@@ -422,23 +472,23 @@ export default function Home() {
               Are you a university student in Nigeria passionate about personal
               growth? Love inspiring others? Join the ReadEvolve Ambassador
               Program and be the face of transformation on your campus. As an
-              ambassador, you'll:
+              ambassador, you will:
             </p>
           </VStack>
 
           <VStack className="flex flex-col lg:flex-row gap-8 items-center mb-10">
             {/* Card 1 */}
-            <VStack className="bg-white p-6 rounded-lg shadow-lg items-center flex-1">
+            <VStack className="bg-white p-6 rounded-lg shadow-lg items-center flex-1 h-[300px]">
               <div className="text-[#25D167] mb-2 p-4 items-center">
                 {/* Icon */}
                 <img
                   src={viral}
-                  className="w-6 h-6"
+                  // className="w-6 h-6"
                   style={{ width: "72px", height: "72px" }}
                   alt="Viral Icon"
                 />
               </div>
-              <div className="p-4">
+              <div className="p-4 flex flex-col items-start justify-center">
                 <h2 className="text-xl font-semibold text-gray-900 mb-6">
                   SPREAD THE WORD
                 </h2>
@@ -449,17 +499,17 @@ export default function Home() {
             </VStack>
 
             {/* Card 2 */}
-            <VStack className="bg-white p-6 rounded-lg shadow-lg items-center flex-1">
+            <VStack className="bg-white p-6 rounded-lg shadow-lg items-center  flex-1 h-[300px]">
               <div className="text-[#F59E0B] mb-2 p-4">
                 {/* Icon */}
                 <img
                   src={events}
-                  className="w-6 h-6"
+                  // className="w-6 h-6"
                   style={{ width: "72px", height: "72px" }}
                   alt="Events Icon"
                 />
               </div>
-              <div className="p-4">
+              <div className="p-4 flex flex-col items-start justify-center">
                 <h2 className="text-xl font-semibold text-gray-900 mb-4">
                   EVENTS
                 </h2>
@@ -470,17 +520,17 @@ export default function Home() {
             </VStack>
 
             {/* Card 3 */}
-            <VStack className="bg-white p-6 rounded-lg shadow-lg items-center flex-1">
+            <VStack className="bg-white p-6 rounded-lg shadow-lg items-center flex-1 h-[300px]">
               <div className="text-[#3B82F6] mb-2 p-4 pt-8">
                 {/* Icon */}
                 <img
                   src={network}
-                  //   className="w-6 h-6"
-                  style={{ width: "72px", height: "72px" }}
+                    // className="w-6 h-6"
+                  style={{ width: "60px", height: "60px" }}
                   alt="Network Icon"
                 />
               </div>
-              <div className="p-4">
+              <div className="p-4 flex flex-col items-start justify-center">
                 <h2 className="text-xl font-semibold text-gray-900 mb-4">
                   NETWORK
                 </h2>
@@ -505,7 +555,7 @@ export default function Home() {
 
           <VStack className="flex flex-col lg:flex-row gap-8 items-center mt-10">
             {/* Card 1 */}
-            <VStack className="bg-white p-6 rounded-lg shadow-lg items-center flex-1">
+            <VStack className="bg-white h-[250px] p-6 rounded-lg shadow-lg items-center flex-1">
               <div className="text-[#25D167] mb-2 p-4">
                 {/* Icon */}
                 <img
@@ -515,7 +565,7 @@ export default function Home() {
                   alt="Member Icon"
                 />
               </div>
-              <div className="p-4">
+              <div className="p-2">
                 <h2 className="text-xl font-semibold text-gray-900 mb-6">
                   MEMBERSHIP
                 </h2>
@@ -524,7 +574,7 @@ export default function Home() {
             </VStack>
 
             {/* Card 2 */}
-            <VStack className="bg-white p-6 rounded-lg shadow-lg items-center flex-1">
+            <VStack className="bg-white h-[250px] p-6 rounded-lg shadow-lg items-center flex-1">
               <div className="text-[#F59E0B] mb-2 p-4">
                 {/* Icon */}
                 <img
@@ -534,7 +584,7 @@ export default function Home() {
                   alt="Certificate Icon"
                 />
               </div>
-              <div className="p-4">
+              <div className="p-2">
                 <h2 className="text-xl font-semibold text-gray-900 mb-4">
                   CERTIFICATION
                 </h2>
@@ -545,17 +595,17 @@ export default function Home() {
             </VStack>
 
             {/* Card 3 */}
-            <VStack className="bg-white p-6 rounded-lg shadow-lg items-center flex-1">
+            <VStack className="bg-white h-[250px] p-6 rounded-lg shadow-lg items-center flex-1">
               <div className="text-[#3B82F6] mb-2 p-4 pt-8">
                 {/* Icon */}
                 <img
                   src={gift}
                   //   className="w-6 h-6"
-                  style={{ width: "72px", height: "72px" }}
-                  alt="Gift Icon"
+                  style={{ width: "58px", height: "58px" }}
+                  alt="Gift Icon" width={50}
                 />
               </div>
-              <div className="p-4">
+              <div className="p-2">
                 <h2 className="text-xl font-semibold text-gray-900 mb-4">
                   REWARDS
                 </h2>
@@ -574,6 +624,77 @@ export default function Home() {
             Apply Now to Become an Ambassador
           </a>
         </VStack>
+
+        {/* Testimonial Section */}
+        <VStack className="flex  flex-col items-center gap-10 p-2 font-suse">
+        <VStack className="text-center max-w-3xl flex flex-col justify-center items-center">
+            <h1 className="text-[28px] lg:text-4xl font-extrabold text-gray-900 mb-6">
+              What People Are Saying About Us
+            </h1>
+          </VStack>
+            <Swiper className="w-full lg:w-1/2 h-[38rem] md:h-[35rem] lg:h-[30rem]"
+                  modules={[Autoplay]}
+                  spaceBetween={30}
+                  slidesPerView={1}
+                  autoplay={true}
+                  loop={true}
+                >
+                <SwiperSlide className="bg-[#25D167] text-white px-6 py-5 rounded-lg">
+                  <div className="flex justify-center m-5 items-center">
+                  <img src={testimonial_1} alt="testimonial 1" className="rounded-full w-[150px] h-[150px]" width={200}/>
+                  </div>
+                  <div className="flex flex-col gap-3 text-center text-[23px] md:text-[25px] lg:text-[25px]">
+                  <small>I've always loved to read but it is hard to pick
+                    up books but being in a ReadEvolve community has given me the momentum
+                    to intentionally pick a book and read and that's because I see other community members talk about 
+                    what they've read and learnt in books which always inspire me.</small>
+                  <small>It's a privilege for me to be in ReadEvolve and I'm grateful for it.</small>      
+                  <i>King</i>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide className="bg-[#25D167] text-white px-6 py-5 rounded-lg">
+                  <div className="flex justify-center m-5 items-center">
+                  <img src={testimonial_2} alt="testimonial 2"  className="rounded-full  w-[150px] h-[150px]" width={200}/>
+                  </div>
+                  <div className="flex flex-col gap-3 text-center text-[23px] md:text-[25px] lg:text-[25px]">
+                    <small>ReadEvolve is a game-changer for book lovers.</small> 
+                    <small>The sense of community here is unmatched,it's like having a community
+                      that's always active and filled with people who truly understand the purpose of reading.
+                    </small> 
+                    <small>If you love books,this is the place to be!</small>  
+                  <i>Kehinde Awodele</i>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide className="bg-[#25D167] text-white px-6 py-5 rounded-lg">
+                  <div className="flex justify-center m-5 items-center">
+                  <img src={testimonial_3} alt="testimonial 3"  className="rounded-full  w-[150px] h-[150px]" width={200} />
+                  </div>
+                  <div className="flex flex-col gap-3 text-center text-[23px] md:text-[25px] lg:text-[25px]">
+                  <small>I decided to start reading nonfiction books December 2023 and boom, ReadEvolve launched.
+                  I have to say all the books we've read have helped me understand myself better and become a better human too.
+                  I really learnt a lot from the books curated and having a community where I could share my thoughts was really
+                  helpful in keeping me accountable.</small>
+                  <small>To ReadEvolve, I say thank you. </small>
+                  <i>Fisayo Akinleye</i>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide className="bg-[#25D167] text-white px-6 py-5 rounded-lg">
+                  <div className="flex justify-center m-5 items-center">
+                  <img src={testimonial_4} alt="testimonial 3" className="rounded-full  w-[150px] h-[150px]" width={200}/>
+                  </div>
+                  <div className="flex flex-col gap-3 text-center text-[23px] md:text-[25px] lg:text-[25px]">
+                  <small>ReadEvolve has been very helpful, it's a great community with an amazing coach.
+                  The carefully selected books have always been helpful, and the insights I've gotten from the books
+                  I've read in the community have helped me greatly in becoming a better human.
+                  </small>
+                  <small>It's a community I highly recommend for anyone who wants to improve all areas of their lives.
+                  </small>
+
+                  <i>Love Bearer, Barnabas David.</i>
+                  </div>
+                </SwiperSlide>
+            </Swiper>
+            </VStack>
       </VStack>
     </>
   );
