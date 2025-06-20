@@ -18,7 +18,7 @@ export default function Header() {
         </div>
 
         {/* Menu Icon */}
-        <div className="block lg:hidden">
+        <div className="block md:hidden">
           <button onClick={toggleMenu} aria-label="Toggle menu">
             {isMenuOpen ? (
               <FaTimes className="text-2xl" />
@@ -29,7 +29,7 @@ export default function Header() {
         </div>
 
         {/* Desktop Navigation Menu */}
-        <nav className="hidden lg:flex lg:items-center lg:space-x-8">
+        <nav className="hidden md:flex lg:items-center lg:space-x-8">
           <ul className="flex space-x-8">
             <li>
               <a

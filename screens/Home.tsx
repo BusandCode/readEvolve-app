@@ -572,7 +572,7 @@ export default function Home() {
 
           <VStack className="flex flex-col lg:flex-row gap-8 items-center mt-10">
             {/* Card 1 */}
-            <VStack className="bg-white h-[250px] p-6 rounded-lg shadow-lg items-center flex-1">
+            <VStack className="bg-white h-[250px] p-6 rounded-lg shadow-lg items-center flex-1 w-full">
               <div className="text-[#25D167] mb-2 p-4">
                 {/* Icon */}
                 <img
@@ -591,7 +591,7 @@ export default function Home() {
             </VStack>
 
             {/* Card 2 */}
-            <VStack className="bg-white h-[250px] p-6 rounded-lg shadow-lg items-center flex-1">
+            <VStack className="bg-white h-[250px] p-6 rounded-lg shadow-lg items-center flex-1 w-full">
               <div className="text-[#F59E0B] mb-2 p-4">
                 {/* Icon */}
                 <img
@@ -612,7 +612,7 @@ export default function Home() {
             </VStack>
 
             {/* Card 3 */}
-            <VStack className="bg-white h-[250px] p-6 rounded-lg shadow-lg items-center flex-1">
+            <VStack className="bg-white h-[250px] p-6 rounded-lg shadow-lg items-center flex-1 w-full">
               <div className="text-[#3B82F6] mb-2 p-4 pt-8">
                 {/* Icon */}
                 <img
